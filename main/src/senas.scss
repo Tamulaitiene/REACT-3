@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+.gem {
+    background: 
+    linear-gradient(45deg,  transparent 0%, transparent 57%, #53b67c 100%),
+    linear-gradient(-45deg, #468f5c 0%,  #36a186 0.3%, #4C2556 112%,  transparent 11% ),
+    linear-gradient(-90deg, #A14436 100%, #36a144 65%, transparent 20% );
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+        overflow-x:auto;
+        h2 {
+            display: inline-block;
+            width: 61%;
+            text-align: center;
+            padding: 0px;
+            margin-top: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #f27676;
+            font-size: 50px;
+        }
+        &__table {
+            width: 70%;
+            margin-left: 300px;
+            margin-top: 50px;
+            text-align: left;
+            background-color: #d49898;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(73, 70, 70);
+        }
+    }
+        button{
+            border: 0;
+            padding: 7px 20px;
+            border-radius: 3px;
+            color: rgb(252, 249, 249);
+        &.editButton{
+            background-color: rgb(250, 202, 202);
+            &:hover{
+                background-color: rgb(10, 9, 9);
+            }
+            
+        }
+        &.deleteButton{
+            background-color: rgb(209, 190, 190);
+            &:hover{
+                background-color: rgb(17, 16, 16);
+            }
+        }
+        &.addButton{
+            margin-top: 15px;
+            background-color: #f27676;
+            &:hover{
+                background-color: rgb(17, 16, 16);
+            }
+        }
+        &.cancelButton{
+            margin-left: 15px;
+            background-color: #f27676;
+            &:hover{
+                background-color: rgb(17, 16, 16);
+            }
+        }
+    }
+    &__modal {
+        display: flex;
+        padding: 30px;
+        text-align: left;
+        h2 {
+            display: inline-block;
+            text-align: center;
+            padding: 0px;
+            margin-top: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #f27676;
+            font-size: 30px;
+        }
+    }
+
+    span {
+        width: 100px;
+        color:#f27676;
+        text-transform: capitalize;
+        margin-right: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+      }
+
+      input {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        width: 250px;
+      }
+      .buttonsStop {
+        // padding: 20px;
+        button{
+            background-color: #f27676;
+            border: 0;
+            padding: 10px 30px;
+            border-radius: 3px;
+            color: white;
+            font-size: 15px;
+            &:hover{
+                background-color: rgb(4, 12, 7);
+            }
+        }
+    }
+     
+}
+   

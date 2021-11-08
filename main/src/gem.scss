@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+.gem {
+  background: linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 57%,
+      #53b67c 100%
+    ),
+    linear-gradient(
+      -45deg,
+      #468f5c 0%,
+      #36a186 0.3%,
+      #4c2556 112%,
+      transparent 11%
+    ),
+    linear-gradient(-90deg, #a14436 100%, #36a144 65%, transparent 20%);
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+
+  &__nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    filter {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    button {
+      margin-top: 15px;
+      margin-left: 20px;
+      background-color: #f27676;
+      &:hover {
+        background-color: rgb(17, 16, 16);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px;
+    overflow-x: auto;
+    h2 {
+      display: inline-block;
+      width: 61%;
+      text-align: center;
+      padding: 0px;
+      margin-top: 50px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #f27676;
+      font-size: 50px;
+    }
+    &__table {
+      width: 70%;
+      margin-left: 300px;
+      margin-top: 10px;
+      text-align: left;
+      background-color: #d49898;
+      padding: 10px;
+      box-shadow: 0 0 10px rgb(73, 70, 70);
+    }
+  }
+  button {
+    border: 0;
+    padding: 7px 20px;
+    border-radius: 3px;
+    color: rgb(252, 249, 249);
+    &.editButton {
+      background-color: rgb(250, 202, 202);
+      &:hover {
+        background-color: rgb(10, 9, 9);
+      }
+    }
+    &.deleteButton {
+      background-color: rgb(209, 190, 190);
+      &:hover {
+        background-color: rgb(17, 16, 16);
+      }
+    }
+    &.addButton {
+      margin-top: 15px;
+      margin-left: 290px;
+      background-color: #f27676;
+      &:hover {
+        background-color: rgb(17, 16, 16);
+      }
+    }
+    &.cancelButton {
+      margin-left: 20px;
+      background-color: #f27676;
+      &:hover {
+        background-color: rgb(17, 16, 16);
+      }
+    }
+  }
+  &__modal {
+    background: linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 57%,
+      #53b67c 0%
+    ),
+    linear-gradient(
+      -45deg,
+      #468f5c 0%,
+      #36a186 0.3%,
+      #4c2556 75%,
+      transparent 11%
+    ),
+    linear-gradient(-90deg, #cc776a 100%, #36a144 65%, transparent 20%);
+    position: absolute;
+    left: 25vw;
+    width: 50vw;
+    height: 30vw;
+
+    h2 {
+      margin-left: 240px;
+      text-align: center;
+      margin-top: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #f27676;
+      font-size: 20px;
+    }
+  }
+
+  span {
+    width: 100px;
+    color: #f27676;
+    text-transform: capitalize;
+    margin-right: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 18px;
+    margin-left: 290px;
+  }
+
+  input {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 200px;
+    width: 300px;
+
+  }
+
+  .buttonsStop {
+    // padding: 20px;
+    margin-left: 300px;
+    margin-top: 10px;
+    button {
+      background-color: #f27676;
+      border: 0;
+      padding: 10px 30px;
+      border-radius: 3px;
+      color: white;
+      font-size: 15px;
+      &:hover {
+        background-color: rgb(4, 12, 7);
+      }
+    }
+  }
+}
